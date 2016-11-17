@@ -1,6 +1,7 @@
 'use strict'
 
 exports.handle = (client) => {
+  console.log('client.getMessagePart()\n\n', JSON.stringify(client.getMessagePart(), null, 2))
   // Create steps
   const sayHello = client.createStep({
     satisfied() {
